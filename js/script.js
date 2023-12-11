@@ -26,9 +26,11 @@ function slide(boxId) {
 
     // Afficher le texte et l'image lorsque le slider est sur box1 ou box2
     if (boxId === 'box1') {
+          // Si on clique sur "box1", on affiche le texte et l'image de "box1" et on cache ceux de "box2"
         infoBox1.classList.add('active');
         infoBox2.classList.remove('active');
     } else if (boxId === 'box2') {
+            // Si on clique sur "box2", on affiche le texte et l'image de "box2" et on cache ceux de "box1"
         infoBox1.classList.remove('active');
         infoBox2.classList.add('active');
     }
