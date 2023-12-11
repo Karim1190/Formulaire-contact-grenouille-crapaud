@@ -1,0 +1,296 @@
+
+body {
+    margin: 0;
+    height: 1300px;
+}
+
+/* Styles pour les titres de niveau 1 */
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+/* Styles pour les paragraphes */
+p {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 32.4px;
+}
+
+/* Styles spécifiques pour l'élément avec l'ID 'accepter' */
+#accepter {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 25.2px;
+}
+
+/* En-tête */
+.header-container {
+    width: 100%;
+}
+
+/* Styles pour les images à l'intérieur de l'en-tête */
+.header-container img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Formulaire */
+.form-container {
+    position: absolute;
+    background-color: #ffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    top: 400px;
+    left: 800px;
+    box-shadow: #ccc 0px 0px 10px;
+}
+
+/* Style du titre du formulaire */
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style du groupe de formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style des champs de saisie du formulaire */
+.form-input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    transition: border-bottom 0.3s;
+}
+
+/* Style des libellés du formulaire */
+.form-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+/* Style du bouton de soumission du formulaire */
+.form-submit {
+    background: #9DD129;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* Styles pour les cases à cocher non cochées */
+.form-group input[type="checkbox"] {
+    appearance: none;
+    width: 25px;
+    height: 18px;
+    border-radius: 5px;
+    background-color: #fff; 
+    border: 2px solid #9DD129; 
+    cursor: pointer;
+ 
+    
+}
+
+/* Styles pour les cases à cocher cochées */
+.form-group input[type="checkbox"]:checked {
+    background-color: #9DD129; /* Couleur de fond verte lorsque la case à cocher est cochée */
+    
+}
+
+/* Alignement du texte à cocher*/
+.aligntextCaseCocher {
+    display: flex;
+}
+
+.labelTextACocher{
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 25.2px;
+    margin-left: 20px;
+}
+
+/* Mise en page en ligne pour les éléments du formulaire */
+.form-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles spécifiques pour les groupes de formulaire en mode ligne */
+.form-inline .form-group {
+    width: 48%;
+}
+
+
+/* Conteneur pour le slider */
+.slider-container {
+    display: inline-flex;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 30px;
+     background-color: #EFEFEF;
+}
+
+/* Style du slider */
+.slider {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #9DD129;
+    transition: transform 0.3s ease, width 0.3s ease;
+    z-index: 1;
+    border-radius: 50px;
+}
+
+/* Style pour les box du slider */
+.box {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 32.4px;
+}
+
+/* Style pour les informations affichées sur le slider */
+.info {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: none;
+    top: 50%;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 32.4px;
+}
+
+/* Styles spécifiques pour les images à l'intérieur des informations du slider */
+.info img {
+    width: 23px;
+    height: 21px;
+    margin-right: 5px;
+}
+
+/* Affichage des informations lorsqu'actif */
+.info.active {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Adresse */
+/* Bloc pour l'adresse */
+.adresse-block {
+    position: relative;
+    max-width: 400px;
+    margin-right: 10px;
+    top: 88px;
+    left: 250px;
+}
+
+/* Styles spécifiques pour les titres et les paragraphes à l'intérieur de l'adresse */
+.adresse-block h1,
+.adresse-block p {
+    margin: 0;
+}
+
+/* Mise en page en ligne pour l'adresse et le formulaire */
+.adresse-block,
+.form-container {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    /* Ajustements pour les écrans de petite taille */
+    .header-container {
+        width: 100%;
+    }
+
+    .header-container img {
+        height: 100px;
+    }
+
+    .form-container {
+        position: relative;
+        width: 90%;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    .form-inline .form-group {
+        width: 100%;
+    }
+
+    .adresse-block {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .form-label {
+        font-size: 16px;
+    }
+
+    .form-submit {
+        font-size: 20px;
+    }
+
+    .form-input {
+        width: 80%;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+        transition: border-bottom 0.3s;
+    }
+}

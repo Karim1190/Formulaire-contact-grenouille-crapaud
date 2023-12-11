@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<body>
+    <header>
+            <div class="header-container">
+                <img src="img/rectangleGrenouille.png" alt="logo">
+            </div>
+    </header>
+    <div class="adresse-block">
+        <h1>MFM DIGITAL</h1>
+        <p>Rue Middelbourg 66, 1170 Watermael-Boitsfort
+            +32 2 880 96 92<br> 
+            info@mfmdigital.com</p>
+            <a href="lien_facebook"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="lien_instagram"><img src="img/instagram.png" alt="Instagram"></a>
+    </div>
+
+    <div class="form-container">
+        <h1>CONTACTEZ-NOUS</h1>
+        <p>Notre agence vous promet une expertise personnalisée et 
+        un accompagnement sur-mesure pour la réalisation de votre 
+        site internet et/ou de votre application.</p>
+        <form>
+            <div class="slider-container">
+                <div class="slider"></div>
+                <div class="box" id="box1" onclick="slide('box1')">
+                    <img src="img/CrapaudNoir.png" alt="">
+                    Crapaud
+                <div class="info" id="infoBox1">Crapaud<img src="img/Crapaud.png" alt=""></div>
+                </div>
+                <div class="box" id="box2" onclick="slide('box2')">
+                    <img src="img/Grenouille.png" alt="">
+                  Grenouille
+                    <div class="info" id="infoBox2">Grenouille <img src="img/GrenouilleBlanc.png" alt=""></div>
+                </div>
+            </div>
+           
+        <div class="form-inline">
+                <div class="form-group">
+                    <label class="form-label" for="nom">Nom :</label>
+                    <input class="form-input" type="text" id="nom" name="nom" required>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label" for="prenom">Prénom :</label>
+                    <input class="form-input" type="text" id="prenom" name="prenom" required>
+                 </div>
+            </div>    
+            <div class="form-group">
+                <label class="form-label" for="phone">Numéro de téléphone :</label>
+                <input class="form-input" type="tel" id="phone" name="phone" required>
+            </div>
+    
+            <div class="form-group">
+                <label class="form-label" for="email">Email :</label>
+                <input class="form-input" type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="adresse">Adresse :</label>
+                <input class="form-input" type="text" id="adresse" name="adresse" required>
+            </div>
+            <div class="form-inline">
+                <div class="form-group">
+                    <label class="form-label" for="codePostal">Code Postal :</label>
+                    <input class="form-input" type="text" id="codePostal" name="codePostal" required>
+                </div>
+    
+                <div class="form-group">
+                    <label class="form-label" for="ville">Ville :</label>
+                    <input class="form-input" type="text" id="ville" name="ville" required>
+                </div>
+            </div>
+            <div class="form-group">
+            <div class="aligntextCaseCocher">
+                <input type="checkbox" id="accepter" name="accepter" required>
+                <label for="accepter" class="labelTextACocher">J’accepte que mes données soient recueillies par une famille de crapauds ou de grenouilles aux étangs d’Ixelles.</label>
+            </div>
+            
+        </div>
+            
+                <button class="form-submit" type="submit">Envoyer</button>
+        </form>
+    </div>
+    <footer>
+
+    </footer>
+<script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
