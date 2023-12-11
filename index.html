@@ -8,11 +8,13 @@
 </head>
     
 <body>
+    <!---------------Banniere image entete-------------->
     <header>
             <div class="header-container">
                 <img src="img/rectangleGrenouille.png" alt="logo">
             </div>
     </header>
+    <!---------------Adresse-------------->
     <div class="adresse-block">
         <h1>MFM DIGITAL</h1>
         <p>Rue Middelbourg 66, 1170 Watermael-Boitsfort
@@ -21,14 +23,15 @@
             <a href="lien_facebook"><img src="img/facebook.png" alt="Facebook"></a>
             <a href="lien_instagram"><img src="img/instagram.png" alt="Instagram"></a>
     </div>
-
+     <!------------Formulaire----------------->
     <div class="form-container">
         <h1>CONTACTEZ-NOUS</h1>
         <p>Notre agence vous promet une expertise personnalisée et 
         un accompagnement sur-mesure pour la réalisation de votre 
         site internet et/ou de votre application.</p>
         <form>
-            <div class="slider-container">
+             <!--selection entre crapaud et grenouille avec le slider -->
+        <div class="slider-container">
                 <div class="slider"></div>
                 <div class="box" id="box1" onclick="slide('box1')">
                     <img src="img/CrapaudNoir.png" alt="">
@@ -41,8 +44,9 @@
                     <div class="info" id="infoBox2">Grenouille <img src="img/GrenouilleBlanc.png" alt=""></div>
                 </div>
             </div>
-           
-        <div class="form-inline">
+         
+            <!--label et input-->
+            <div class="form-inline">
                 <div class="form-group">
                     <label class="form-label" for="nom">Nom :</label>
                     <input class="form-input" type="text" id="nom" name="nom" required>
@@ -89,9 +93,8 @@
                 <button class="form-submit" type="submit">Envoyer</button>
         </form>
     </div>
-    <footer>
-
-    </footer>
+                            
+ <!---------------Fichier js mon script + jquery-------------->
 <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
