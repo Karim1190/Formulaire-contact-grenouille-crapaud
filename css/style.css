@@ -45,7 +45,7 @@ p {
 .form-container {
     position: absolute;
     background-color: #ffff;
-    padding: 30px;
+    padding: 40px 48px;
     border-radius: 8px;
     width: 500px;
     top: 400px;
@@ -106,25 +106,28 @@ p {
 /* Styles pour les cases à cocher non cochées */
 .form-group input[type="checkbox"] {
     appearance: none;
-    width: 25px;
+    width: 18px;
     height: 18px;
     border-radius: 5px;
     background-color: #fff; 
     border: 2px solid #9DD129; 
     cursor: pointer;
- 
-    
+    flex-shrink: 0; /* Empêche la case à cocher d'être écrasée */
+    margin-top: 5px;
 }
 
 /* Styles pour les cases à cocher cochées */
 .form-group input[type="checkbox"]:checked {
     background-color: #9DD129; /* Couleur de fond verte lorsque la case à cocher est cochée */
+    border: 2px solid #fff; /* Bordure blanche */
+    box-shadow: 0 0 0 2px #9DD129; /* Bordure verte à l'extérieur */
     
 }
 
 /* Alignement du texte à cocher*/
 .aligntextCaseCocher {
     display: flex;
+    align-items: flex-start;
 }
 
 .labelTextACocher{
@@ -132,7 +135,8 @@ p {
     font-family: Helvetica, sans-serif;
     font-weight: 300;
     line-height: 25.2px;
-    margin-left: 20px;
+    margin-left: 10px;
+   
 }
 
 /* Mise en page en ligne pour les éléments du formulaire */
@@ -149,34 +153,39 @@ p {
 
 /* Conteneur pour le slider */
 .slider-container {
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     border-radius: 50px;
     margin-bottom: 30px;
-     background-color: #EFEFEF;
+    background-color: #EFEFEF;
+    width: 312px;
+
 }
 
 /* Style du slider */
 .slider {
     position: absolute;
     height: 100%;
-    width: 0;
     background-color: #9DD129;
-    transition: transform 0.3s ease, width 0.3s ease;
+    transition: transform 0.3s ease,0.3s ease;
     z-index: 1;
     border-radius: 50px;
+    width: 150px;
+    padding-left: 14px;
+
 }
 
 /* Style pour les box du slider */
 .box {
     position: relative;
-    padding: 10px 15px;
+    padding: 14px 24px;
     cursor: pointer;
-    transition: width 0.3s ease;
+    transition: 0.3s ease;
     font-size: 18px;
     font-family: Helvetica, sans-serif;
     font-weight: 300;
-    line-height: 32.4px;
 }
 
 /* Style pour les informations affichées sur le slider */
@@ -199,14 +208,27 @@ p {
     width: 23px;
     height: 21px;
     margin-right: 5px;
+    
 }
 
-/* Affichage des informations lorsqu'actif */
+/* Affichage des informations actif */
 .info.active {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 
+/* Affichage des informations non actif */
+
+.pasActiv{
+    display: flex;
+    align-items: center;
+    
+}
+.pasActiv img{
+    margin-right: 5px;
+}
+/*---/*
 /* Adresse */
 /* Bloc pour l'adresse */
 .adresse-block {
@@ -221,6 +243,7 @@ p {
 .adresse-block h1,
 .adresse-block p {
     margin: 0;
+    line-height: 41.3px;
 }
 
 /* Mise en page en ligne pour l'adresse et le formulaire */
@@ -229,6 +252,10 @@ p {
     display: inline-block;
     vertical-align: top;
     margin-right: 20px;
+}
+.adresse-block img{
+    margin-right: 16px;
+    margin-top: 24px;
 }
 
 /* Responsive Design */

@@ -16,10 +16,13 @@ function slide(boxId) {
     const boxRect = box.getBoundingClientRect();
     const sliderRect = slider.parentElement.getBoundingClientRect();
 
+    
+
     // Calculez la position de la box par rapport au slider
     const offset = boxRect.left - sliderRect.left;
-    const width = boxRect.width;
+    const width = "150px";
 
+  
     // Appliquez la transformation et la largeur au slider pour obtenir l'effet de glissement
     slider.style.transform = `translateX(${offset}px)`;
     slider.style.width = `${width}px`;
