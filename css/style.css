@@ -108,7 +108,7 @@ p {
     border: 2px solid #9DD129; 
     cursor: pointer;
     flex-shrink: 0; /* Empêche la case à cocher d'être écrasée */
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 /* Styles pour les cases à cocher cochées */
