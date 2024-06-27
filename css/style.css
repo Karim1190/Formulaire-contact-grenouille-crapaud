@@ -14,18 +14,13 @@ h1 {
 /* Styles pour les paragraphes */
 p {
     font-size: 18px;
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica;
     font-weight: 300;
     line-height: 32.4px;
 }
 
 /* Styles spécifiques pour l'élément avec l'ID 'accepter' */
-#accepter {
-    font-size: 14px;
-    font-family: Helvetica, sans-serif;
-    font-weight: 300;
-    line-height: 25.2px;
-}
+
 
 /* En-tête */
 .header-container {
@@ -81,8 +76,8 @@ p {
     display: block;
     margin-bottom: 5px;
     font-size: 18px;
-    font-family: Helvetica, sans-serif;
-    font-weight: 500;
+    font-family: Helvetica;
+    font-weight: 400;
 }
 
 /* Style du bouton de soumission du formulaire */
@@ -91,7 +86,7 @@ p {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 20px;
+    border-radius: 44px;
     cursor: pointer;
     display: block;
     margin: 0 auto;
@@ -128,6 +123,7 @@ p {
 .aligntextCaseCocher {
     display: flex;
     align-items: flex-start;
+    padding-right: 5px;
 }
 
 .labelTextACocher{
@@ -153,14 +149,15 @@ p {
 
 /* Conteneur pour le slider */
 .slider-container {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
-    align-items: center;
+   
     position: relative;
     border-radius: 50px;
     margin-bottom: 30px;
     background-color: #EFEFEF;
-    width: 312px;
+   
+
 
 }
 
@@ -172,9 +169,8 @@ p {
     transition: transform 0.3s ease,0.3s ease;
     z-index: 1;
     border-radius: 50px;
-    width: 150px;
-    padding-left: 14px;
-
+    width: 156px;
+ 
 }
 
 /* Style pour les box du slider */
@@ -184,12 +180,13 @@ p {
     cursor: pointer;
     transition: 0.3s ease;
     font-size: 18px;
-    font-family: Helvetica, sans-serif;
-    font-weight: 300;
+    font-family: Helvetica;
+    font-weight: 400;
 }
 
 /* Style pour les informations affichées sur le slider */
 .info {
+    
     z-index: 2;
     position: absolute;
     left: 50%;
@@ -199,7 +196,7 @@ p {
     top: 50%;
     font-size: 18px;
     font-family: Helvetica, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32.4px;
 }
 
@@ -244,6 +241,7 @@ p {
 .adresse-block p {
     margin: 0;
     line-height: 41.3px;
+    font-weight: 300px;
 }
 
 /* Mise en page en ligne pour l'adresse et le formulaire */
